@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply relative block py-1 transition-all duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:transition-all after:duration-200 after:hover:animate-slideToRight after:hover:bg-app-100;
+}
+
+a.active {
+  @apply font-bold after:bg-app-100 after:hover:animate-none;
+}
